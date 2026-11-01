@@ -4,6 +4,7 @@ plugins {
 }
 
 android {
+    namespace "com.bench.wificrack"
     compileSdk 34
     defaultConfig {
         applicationId "com.bench.wificrack"

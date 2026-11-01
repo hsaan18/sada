@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#111111">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hash File (.hc22000)"
+        android:textColor="#AAAAAA"
+        android:textSize="12sp"/>
+
+    <EditText
+        android:id="@+id/etHashFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#333333"
+        android:inputType="text"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wordlist Path"
+        android:textColor="#AAAAAA"
+        android:textSize="12sp"
+        android:layout_marginTop="12dp"/>
+
+    <EditText
+        android:id="@+id/etWordlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#333333"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/btnRunCrack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RUN HASHCAT"
+        android:backgroundTint="#FF4444"
+        android:layout_marginTop="16dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:id="@+id/tvCrackOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#00FF88"
+            android:textSize="11sp"
+            android:fontFamily="monospace"
+            android:background="#0A0A0A"
+            android:padding="8dp"/>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,2 @@
+rootProject.name = "wificrack"
+include ':app'
